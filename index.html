@@ -2,67 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Deployment Successful</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps CI/CD Project</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #1e3c72, #2a5298);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             color: white;
             text-align: center;
         }
 
         .container {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 40px;
-            border-radius: 12px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            margin-top: 100px;
         }
 
         h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 18px;
+            font-size: 50px;
             margin-bottom: 20px;
         }
 
-        .status {
-            font-size: 16px;
-            padding: 10px 20px;
-            background-color: #28a745;
-            border-radius: 20px;
-            display: inline-block;
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
         }
 
-        footer {
+        .badge {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00c9a7;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            margin: 30px auto;
+            padding: 20px;
+            width: 300px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .names {
             margin-top: 20px;
+            font-size: 18px;
+            color: #ffd369;
+            font-weight: bold;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
             font-size: 14px;
             opacity: 0.8;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>Deployment Successful.</h1>
-        
-        <h1>Akash A.R.</h1>
-        <h1>Akilesh G.A.</h1>
-        <h1>Bharath P.</h1>
-        <p>Your application is running on NGINX server.</p>
-        <div class="status">Build & Deploy via Jenkins</div>
-        <footer>
-            <p>Powered by NGINX | CI/CD with Jenkins</p>
-        </footer>
+        <h1>🚀 CI/CD Pipeline</h1>
+        <p>Successfully Deployed using Jenkins on AWS EC2</p>
+
+        <div class="badge">✔ Build Successful</div>
+
+        <div class="card">
+            <h3>Pipeline Stages</h3>
+            <p>✔ Checkout</p>
+            <p>✔ Build</p>
+            <p>✔ Test</p>
+            <p>✔ Deploy</p>
+        </div>
+
+        <div class="names">
+            Deployed by:<br>
+            Akash A.R.<br>
+            Akilesh G.A.<br>
+            Bharath P.
+        </div>
     </div>
+
+    <div class="footer">
+        <p>DevOps Project | Jenkins + AWS + GitHub</p>
+    </div>
+
 </body>
 </html>
