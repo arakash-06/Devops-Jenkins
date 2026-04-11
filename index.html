@@ -4,68 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps CI/CD Project</title>
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
             text-align: center;
         }
 
         .container {
-            margin-top: 100px;
+            margin-top: 80px;
         }
 
         h1 {
-            font-size: 50px;
-            margin-bottom: 20px;
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #00e6e6;
         }
 
-        p {
+        .subtitle {
             font-size: 20px;
-            margin-bottom: 20px;
+            color: #d1f7ff;
+            margin-bottom: 30px;
         }
 
         .badge {
             display: inline-block;
-            padding: 10px 20px;
-            background: #00c9a7;
-            border-radius: 25px;
+            padding: 10px 25px;
+            background: #00ffcc;
+            color: #000;
+            border-radius: 30px;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .card {
-            background: rgba(255,255,255,0.1);
-            margin: 30px auto;
-            padding: 20px;
-            width: 300px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.08);
+            margin: 20px auto;
+            padding: 25px;
+            width: 320px;
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
         }
 
-        .names {
-            margin-top: 20px;
+        .card h3 {
+            margin-bottom: 15px;
+            color: #00ffcc;
+        }
+
+        .card p {
+            margin: 8px 0;
             font-size: 18px;
+        }
+
+        .team {
+            margin-top: 40px;
+            padding: 20px;
+            display: inline-block;
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+        }
+
+        .team h3 {
+            margin-bottom: 10px;
             color: #ffd369;
-            font-weight: bold;
+        }
+
+        .team p {
+            margin: 5px 0;
+            font-size: 18px;
         }
 
         .footer {
-            position: fixed;
-            bottom: 10px;
-            width: 100%;
+            margin-top: 60px;
             font-size: 14px;
-            opacity: 0.8;
+            color: #cccccc;
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
         <h1>🚀 CI/CD Pipeline</h1>
-        <p>Successfully Deployed using Jenkins on AWS EC2</p>
+        <div class="subtitle">
+            Successfully Deployed using Jenkins on AWS EC2
+        </div>
 
         <div class="badge">✔ Build Successful</div>
 
@@ -77,16 +104,16 @@
             <p>✔ Deploy</p>
         </div>
 
-        <div class="names">
-            Deployed by:<br>
-            Akash A.R.<br>
-            Akilesh G.A.<br>
-            Bharath P.
+        <div class="team">
+            <h3>👨‍💻 Deployed By</h3>
+            <p>Akash A.R.</p>
+            <p>Akilesh G.A.</p>
+            <p>Bharath P.</p>
         </div>
-    </div>
 
-    <div class="footer">
-        <p>DevOps Project | Jenkins + AWS + GitHub</p>
+        <div class="footer">
+            DevOps Project | Jenkins + AWS + GitHub
+        </div>
     </div>
 
 </body>
